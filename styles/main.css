@@ -1,0 +1,184 @@
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.app {
+    float: right;
+    width: 70%;
+    background-color: black;
+}
+
+.header {
+    background-color: red;
+    padding: 20px 40px 30px 40px;
+    color: white;
+    text-align: center;
+    font-size: 220%;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-variant: small-caps;
+}
+
+h2 {
+    margin: 0px 0px 15px 0px;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: red;
+    color: white;
+}
+
+#myInput {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 70%;
+    padding: 1%;
+    float: left;
+    font-size: 16px;
+    background-color: white;
+}
+
+#myInput:focus {
+    outline: none;
+}
+
+.addBtn {
+    padding: 1.16%;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+.profile-card {
+    float: left;
+    width: 30%;
+    background-color: white;
+    position: fixed;
+}
+
+.img {
+    border-radius: 80%;
+    width: 75%;
+    height: 75%;
+    margin: 5% 10% 5% 12%;
+}
+
+.user-tombstone {
+    font-size: 220%;
+    margin: 0px 0px;
+    text-align: center;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-variant: small-caps;
+}
+
+.bio {
+    padding: 5% 10% 0% 10%;
+    line-height: 200%;
+}
+
+.logOut {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 3px 2px #000;
+    border: none;
+    background: transparent;
+    float: right;
+}
+
+.logOut:hover {
+    color: rgba(0, 0, 0, 0.555);
+}

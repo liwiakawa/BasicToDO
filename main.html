@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page Title</title>
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="profile-card">
+            <div class="image-container">
+                <img src="img/user.jpg" class="img">
+                <div class="user-tombstone">
+                    <h2>Tombstone</h2>
+                </div>
+            </div>
+            <div class="bio">
+                <hr>
+                <p><i class="fas fa-camera-retro"></i> No flesh</p>
+                <p><i class="fas fa-brain"></i> No brain</p>
+                <p><i class="fas fa-frown"></i> But still in pain</p>
+                <button onclick="mainApp.logOut()" class="logOut"><i class="fas fa-power-off fa-3x"></i></button>
+            </div>
+        </div>
+        <div class="app">
+            <div id="myDIV" class="header">
+                <h2>100 things to do before u die</h2>
+                <input type="text" id="myInput" placeholder="Add new task...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+            </div>
+            <ul id="myUL">
+                <li>See the Northern Lights</li>
+                <li class="checked">Ride in a Hot Air Balloon</li>
+                <li> See the Grand Canyon </li>
+                <li> Swim With Dolphins </li>
+                <li> Go on Safari </li>
+                <li> Ride a Helicopter </li>
+                <li> Visit All Seven Continents </li>
+                <li> Scuba Dive the Great Barrier Reef </li>
+                <li> Go on a Road Trip </li>
+                <li> Shower in a Waterfall </li>
+                <li> Travel to Italy </li>
+                <li> Go Sky-Diving </li>
+                <li> Get Married </li>
+                <li> Walk the Great Wall of China </li>
+                <li> Ride an Elephant </li>
+                <li> Australia </li>
+                <li> Learn a Foreign Language </li>
+            </ul>
+        </div>
+        <script src="js/todo.js"></script>
+        <script src="js/fireBase.js"></script>
+        <script src="js/main.js"></script>
+</body>
+</html>
